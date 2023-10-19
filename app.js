@@ -1,7 +1,8 @@
-const rect = {
-    perimeter: (x, y) => 2 * (x + y),
-    area: (x, y) => x * y
-};
+const rect = require('./rectangle');
+// {
+//     perimeter: (x, y) => 2 * (x + y),
+//     area: (x, y) => x * y
+// };
 
 function solveRect(l, w) {
     console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
@@ -25,5 +26,7 @@ First method is the perimeter and it takes two values. The perimeter is the sum 
 The area method also takes two values. Then return the product of those two values by multiplying them together. 
 L and W stand for Length and Width. 
 Use templeta literal, meaning use backticks, not quotation marks (Line7). 
+
+Assing to const rect the "require" function. Asing the relative path to this file will look inside the same folder.
 
 */
